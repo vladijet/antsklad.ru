@@ -19,14 +19,12 @@ export default function ObjectPage() {
       <Header />
       <div className="max-w-7xl mx-auto px-5 md:px-10 py-10">
         <Link to="/" className="inline-flex items-center gap-2 font-mono text-xs uppercase text-[#D1D5DB] hover:text-white"><ArrowLeft className="w-4 h-4" /> Объекты</Link>
-        <p className="mt-6 font-mono text-xs text-[#E9F056]">[ {o.lot} ]</p>
-        <h1 className="mt-2 text-3xl md:text-6xl font-black uppercase tracking-tight">{o.title}</h1>
-        <p className="mt-3 flex items-center gap-2 text-[#D1D5DB]"><MapPin className="w-4 h-4" /> {o.address}</p>
+        <h1 className="mt-6 text-3xl md:text-6xl font-black uppercase tracking-tight">{o.title}</h1>
 
         <div className="mt-10 grid lg:grid-cols-12 gap-8">
           <div className="lg:col-span-8 space-y-12">
             <div>
-              <div className="aspect-[16/10] border border-white/10 overflow-hidden">
+              <div className="aspect-[16/10] rounded-3xl border border-white/10 overflow-hidden">
                 <img src={o.gallery[img]} alt={o.title} className="w-full h-full object-cover" />
               </div>
               <div className="mt-3 flex gap-3">
@@ -62,9 +60,8 @@ export default function ObjectPage() {
           </div>
 
           <aside className="lg:col-span-4">
-            <div className="lg:sticky lg:top-24 border border-white/10 p-6 bg-[#3F4753]">
-              <div className="font-mono text-xs uppercase text-[#D1D5DB]">Стоимость · {o.vat}</div>
-              <div className="mt-2 text-4xl font-black text-[#E9F056]">{o.price}</div>
+            <div className="lg:sticky lg:top-24 rounded-3xl border border-white/10 p-6 bg-[#3F4753]">
+              <div className="text-4xl font-black text-[#E9F056]">{o.price}</div>
               <div className="mt-1 font-mono text-sm text-[#D1D5DB]">{o.pricePerM}</div>
               <div className="mt-6 grid grid-cols-2 gap-px bg-white/10">
                 {[["Площадь", o.area], ["Участок", o.land], ["Мощность", o.power], ["Потолки", o.height]].map(([k, v]) => (
