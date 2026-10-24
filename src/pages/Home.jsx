@@ -20,24 +20,23 @@ export default function Home() {
             ))}
           </div>
           <h1 className="mt-6 text-4xl md:text-7xl font-black uppercase tracking-tight leading-[0.95] max-w-4xl">
-            Готовые склады в Екатеринбурге и области
+            Новые здания для бизнеса в Екатеринбурге
           </h1>
           <p className="mt-6 text-lg text-[#A0AEC0] max-w-2xl">
             Здание и участок в собственности, все разрешения и коммуникации. Покупаете — и сразу начинаете работать.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#catalog" className="bg-[#FFB800] text-black font-bold uppercase px-7 h-14 inline-flex items-center">Смотреть объекты</a>
-            <Link to={`/objects/${hero.slug}`} className="border border-white/30 font-bold uppercase px-7 h-14 inline-flex items-center hover:border-white">{hero.address}</Link>
+            <a href="#catalog" className="rounded-full bg-[#FFB800] text-black font-bold uppercase px-7 h-14 inline-flex items-center hover:bg-white transition-colors">Смотреть объекты</a>
+            <Link to={`/objects/${hero.slug}`} className="rounded-full border border-white/30 font-bold uppercase px-7 h-14 inline-flex items-center hover:border-white">{hero.address}</Link>
           </div>
         </div>
       </section>
       <section id="catalog" className="max-w-7xl mx-auto px-5 md:px-10 py-20 border-b border-white/10">
         <div className="flex items-end justify-between">
           <div>
-            <p className="font-mono text-xs uppercase text-[#FFB800] tracking-widest">[ Реестр объектов ]</p>
-            <h2 className="mt-4 text-3xl md:text-5xl font-black uppercase tracking-tight">Каталог</h2>
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">Объекты</h2>
           </div>
-          <span className="font-mono text-sm text-[#A0AEC0]">{OBJECTS.length} объект(ов)</span>
+
         </div>
         <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {OBJECTS.map((o) => <ObjectCard key={o.slug} o={o} />)}

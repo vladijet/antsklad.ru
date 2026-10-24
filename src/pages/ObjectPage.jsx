@@ -4,7 +4,8 @@ import { Phone, MapPin, ArrowLeft } from "lucide-react";
 import Header from "@/components/site/Header";
 import Benefits from "@/components/site/Benefits";
 import ContactBlock from "@/components/site/ContactBlock";
-import { OBJECTS, PHONE, PHONE_HREF } from "@/lib/objects";
+import { OBJECTS } from "@/lib/objects";
+import CallButton from "@/components/site/CallButton";
 
 export default function ObjectPage() {
   const { slug } = useParams();
@@ -17,7 +18,7 @@ export default function ObjectPage() {
     <div className="min-h-screen bg-[#1A1C1E] text-[#F2F4F7]">
       <Header />
       <div className="max-w-7xl mx-auto px-5 md:px-10 py-10">
-        <Link to="/" className="inline-flex items-center gap-2 font-mono text-xs uppercase text-[#A0AEC0] hover:text-white"><ArrowLeft className="w-4 h-4" /> Каталог</Link>
+        <Link to="/" className="inline-flex items-center gap-2 font-mono text-xs uppercase text-[#A0AEC0] hover:text-white"><ArrowLeft className="w-4 h-4" /> Объекты</Link>
         <p className="mt-6 font-mono text-xs text-[#FFB800]">[ {o.lot} ]</p>
         <h1 className="mt-2 text-3xl md:text-6xl font-black uppercase tracking-tight">{o.title}</h1>
         <p className="mt-3 flex items-center gap-2 text-[#A0AEC0]"><MapPin className="w-4 h-4" /> {o.address}</p>
@@ -70,10 +71,7 @@ export default function ObjectPage() {
                   <div key={k} className="bg-[#141618] p-3"><div className="font-mono text-[10px] uppercase text-[#A0AEC0]">{k}</div><div className="font-mono font-bold">{v}</div></div>
                 ))}
               </div>
-              <a href={PHONE_HREF} className="mt-6 flex items-center justify-center gap-3 h-14 bg-[#FFB800] text-black font-black uppercase hover:bg-white transition-colors">
-                <Phone className="w-5 h-5" /> Позвонить Антону
-              </a>
-              <p className="mt-3 text-center font-mono text-sm">{PHONE}</p>
+              <CallButton className="mt-6 w-full h-14 gap-3 font-black" iconClass="w-5 h-5" />
               <p className="mt-1 text-center text-xs text-[#A0AEC0]">Генеральный директор, собственник</p>
             </div>
           </aside>

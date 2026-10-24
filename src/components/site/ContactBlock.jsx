@@ -1,5 +1,4 @@
-import { Phone } from "lucide-react";
-import { PHONE, PHONE_HREF } from "@/lib/objects";
+import CallButton from "@/components/site/CallButton";
 
 export default function ContactBlock() {
   return (
@@ -8,9 +7,7 @@ export default function ContactBlock() {
         <p className="font-mono text-xs uppercase text-[#FFB800] tracking-widest">[ Прямая связь ]</p>
         <h2 className="mt-4 text-3xl md:text-6xl font-black uppercase tracking-tight">Сделка напрямую с собственником</h2>
         <p className="mt-4 text-[#A0AEC0]">Антон — генеральный директор. Покажет объект и ответит на любые вопросы.</p>
-        <a href={PHONE_HREF} className="mt-10 inline-flex items-center gap-4 bg-[#FFB800] text-black font-black text-2xl md:text-5xl px-8 md:px-12 py-6 md:py-8 hover:bg-white transition-colors">
-          <Phone className="w-7 h-7 md:w-10 md:h-10" /> {PHONE}
-        </a>
+        <CallButton className="mt-10 gap-4 font-black text-2xl md:text-4xl px-10 md:px-14 py-6" iconClass="w-7 h-7 md:w-9 md:h-9" />
         <p className="mt-6 font-mono text-xs text-[#A0AEC0]">Агентов просьба не беспокоить</p>
       </div>
       <footer className="border-t border-white/10 py-6 text-center font-mono text-xs text-[#A0AEC0]">
