@@ -38,9 +38,9 @@ export default function ObjectPage() {
 
             <section>
               <h2 className="text-2xl font-black uppercase">Характеристики</h2>
-              <div className="mt-6 grid sm:grid-cols-2 border-t border-l border-white/10">
+              <div className="mt-6 flex flex-col">
                 {o.specs.map(([k, v]) => (
-                  <div key={k} className="flex justify-between gap-4 border-r border-b border-white/10 px-5 py-4">
+                  <div key={k} className="flex justify-between gap-4 py-3">
                     <span className="text-[#D1D5DB]">{k}</span><span className="font-mono font-bold text-right">{v}</span>
                   </div>
                 ))}

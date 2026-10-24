@@ -11,7 +11,7 @@ export default function Benefits() {
   return (
     <div className="bg-[#FAF5F0] text-[#2F3640]">
       <section id="why" className="max-w-7xl mx-auto px-5 md:px-10 py-20 md:py-28">
-        <p className="font-mono text-xs uppercase text-[#4B5563] tracking-widest">[ Почему готовый склад ]</p>
+        <p className="font-mono text-xs uppercase text-[#4B5563] tracking-widest">Почему наши объекты</p>
         <h2 className="mt-4 text-3xl md:text-5xl font-black uppercase tracking-tight max-w-3xl">Без долгостроя, согласований и сюрпризов в бюджете</h2>
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-[#4B5563]/15">
           {ITEMS.map(([n, t, d]) => (
