@@ -8,25 +8,25 @@ import { OBJECTS } from "@/lib/objects";
 export default function Home() {
   const hero = OBJECTS[0];
   return (
-    <div className="min-h-screen bg-[#1A1C1E] text-[#F2F4F7]">
+    <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0]">
       <Header />
       <section className="relative h-[88vh] min-h-[560px] overflow-hidden">
         <img src={hero.cover} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1A1C1E] via-[#1A1C1E]/60 to-[#1A1C1E]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#4B5563] via-[#4B5563]/60 to-[#4B5563]/20" />
         <div className="relative h-full max-w-7xl mx-auto px-5 md:px-10 flex flex-col justify-end pb-16">
           <div className="flex flex-wrap gap-2 font-mono text-xs">
             {["СТАТУС: ПОСТРОЕН", "ДОКУМЕНТЫ: ГОТОВЫ", "ЦЕНА: ФИКСИРОВАНА"].map((t) => (
-              <span key={t} className="text-[#FFB800] py-1.5 pr-3">[ {t} ]</span>
+              <span key={t} className="text-[#E9F056] py-1.5 pr-3">[ {t} ]</span>
             ))}
           </div>
           <h1 className="mt-6 text-4xl md:text-7xl font-black uppercase tracking-tight leading-[0.95] max-w-4xl">
             Помещения для бизнеса в Екатеринбурге
           </h1>
-          <p className="mt-6 text-lg text-[#A0AEC0] max-w-2xl">
+          <p className="mt-6 text-lg text-[#E5E7EB] max-w-2xl">
             Здание и участок в собственности, все разрешения и коммуникации. Покупаете — и сразу начинаете работать.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#catalog" className="rounded-full bg-[#FFB800] text-black font-bold uppercase px-7 h-14 inline-flex items-center hover:bg-white transition-colors">Смотреть объекты</a>
+            <a href="#catalog" className="rounded-full bg-[#E9F056] text-black font-bold uppercase px-7 h-14 inline-flex items-center hover:bg-[#A7F3D0] transition-colors">Смотреть объекты</a>
             <Link to={`/objects/${hero.slug}`} className="rounded-full border border-white/30 font-bold uppercase px-7 h-14 inline-flex items-center hover:border-white">{hero.address}</Link>
           </div>
         </div>
