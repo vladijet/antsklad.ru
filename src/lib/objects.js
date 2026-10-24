@@ -1,3 +1,4 @@
+const RENDER = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/d71c5c565_generated_image.png";
 const EXT = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/b18485370_generated_image.png";
 const INT = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/23b45de50_generated_image.png";
 
@@ -17,8 +18,13 @@ export const OBJECTS = [
     land: "27 соток",
     power: "200 кВт",
     height: "7 м",
-    cover: EXT,
-    gallery: [EXT, INT],
+    cover: RENDER,
+    gallery: [
+      RENDER,
+      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/05f12fa74_image.png",
+      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/e1c14a136_image.png",
+      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/b3c5e5b6f_image.png",
+    ],
     specs: [
       ["Общая площадь", "806 м²"],
       ["Участок", "27 соток"],
