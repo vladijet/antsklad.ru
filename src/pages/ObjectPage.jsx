@@ -69,7 +69,6 @@ export default function ObjectPage() {
                 ))}
               </div>
               <CallButton className="mt-6 w-full h-14 gap-3 font-black" iconClass="w-5 h-5" />
-              <p className="mt-1 text-center text-xs text-[#D1D5DB]">Генеральный директор, собственник</p>
             </div>
           </aside>
         </div>

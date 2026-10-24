@@ -15,7 +15,7 @@ export default function Benefits() {
         <h2 className="mt-4 text-3xl md:text-5xl font-black uppercase tracking-tight max-w-3xl">Без долгостроя, согласований и сюрпризов в бюджете</h2>
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-[#4B5563]/15">
           {ITEMS.map(([n, t, d]) => (
-            <div key={n} className="border-r border-b border-[#4B5563]/15 p-8 hover:bg-[#A7F3D0]/30 transition-colors">
+            <div key={n} className="border-r border-b border-[#4B5563]/15 p-8">
               <span className="inline-block font-mono text-sm bg-[#E9F056] rounded-full px-3 py-1">{n}</span>
               <h3 className="mt-6 text-xl font-bold uppercase">{t}</h3>
               <p className="mt-3 text-[#6B7280] leading-relaxed">{d}</p>

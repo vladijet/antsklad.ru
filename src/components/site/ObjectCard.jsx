@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 export default function ObjectCard({ o }) {
   const metrics = [["Площадь", o.area], ["Участок", o.land], ["Мощность", o.power], ["Цена", o.price]];
   return (
-    <Link to={`/objects/${o.slug}`} className="group block rounded-3xl overflow-hidden bg-[#FAF5F0] text-[#2F3640] border-2 border-transparent hover:border-[#A7F3D0] transition-colors">
+    <Link to={`/objects/${o.slug}`} className="group block rounded-3xl overflow-hidden bg-[#FAF5F0] text-[#2F3640] transition-transform duration-300 hover:-translate-y-1">
       <div className="relative aspect-[16/10] overflow-hidden">
         <img src={o.cover} alt={o.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
         <span className="absolute top-3 left-3 font-mono text-xs bg-[#4B5563]/90 text-[#FAF5F0] rounded-full px-3 py-1">{o.lot}</span>

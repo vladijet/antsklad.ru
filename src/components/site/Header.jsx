@@ -10,8 +10,6 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex gap-8 font-mono text-xs uppercase text-[#E5E7EB]">
           <a href="/#catalog" className="hover:text-white">Объекты</a>
-          <a href="/#why" className="hover:text-white">Преимущества</a>
-          <a href="#contact" className="hover:text-white">Контакты</a>
         </nav>
         <CallButton className="px-5 h-11 text-sm" />
       </div>
