@@ -55,7 +55,7 @@ export default function ObjectPage() {
             <section>
               <h2 className="text-2xl font-black uppercase">Расположение</h2>
               <ul className="mt-4 font-mono text-sm text-[#D1D5DB] space-y-1">{o.metro.map((m) => <li key={m}>● м. {m}</li>)}</ul>
-              <iframe title="map" className="mt-6 w-full h-80 border border-white/10" src={`https://yandex.ru/map-widget/v1/?text=${encodeURIComponent(o.address)}&z=15`} />
+              <iframe title="map" className="mt-6 w-full h-80 border border-white/10" src={`https://yandex.ru/map-widget/v1/?ll=60.578242,56.859891&pt=60.578242,56.859891,pm2rdm&z=16`} />
             </section>
           </div>
 
