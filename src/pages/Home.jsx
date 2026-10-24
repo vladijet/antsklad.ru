@@ -16,11 +16,11 @@ export default function Home() {
         <div className="relative h-full max-w-7xl mx-auto px-5 md:px-10 flex flex-col justify-end pb-16">
           <div className="flex flex-wrap gap-2 font-mono text-xs">
             {["СТАТУС: ПОСТРОЕН", "ДОКУМЕНТЫ: ГОТОВЫ", "ЦЕНА: ФИКСИРОВАНА"].map((t) => (
-              <span key={t} className="border border-[#FFB800] text-[#FFB800] px-3 py-1.5 bg-black/40">[ {t} ]</span>
+              <span key={t} className="text-[#FFB800] py-1.5 pr-3">[ {t} ]</span>
             ))}
           </div>
           <h1 className="mt-6 text-4xl md:text-7xl font-black uppercase tracking-tight leading-[0.95] max-w-4xl">
-            Новые здания для бизнеса в Екатеринбурге
+            Помещения для бизнеса в Екатеринбурге
           </h1>
           <p className="mt-6 text-lg text-[#A0AEC0] max-w-2xl">
             Здание и участок в собственности, все разрешения и коммуникации. Покупаете — и сразу начинаете работать.
