@@ -23,7 +23,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src={LOGO} alt="Уральские склады" className="h-[35px] w-auto" />
+          <img src={LOGO} alt="Уральские склады" className="h-[31.5px] w-auto" />
         </Link>
         <nav className={`hidden md:flex gap-8 font-mono text-base uppercase ${transparent ? "text-[#2F3640]" : "text-[#E5E7EB]"}`}>
           <a href="/#catalog" className={transparent ? "hover:text-black" : "hover:text-white"}>Объекты</a>
