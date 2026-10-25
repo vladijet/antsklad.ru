@@ -22,7 +22,7 @@ export default function ObjectPage() {
         <h1 className="mt-6 text-3xl md:text-6xl font-bold tracking-tight leading-tight">{o.title}</h1>
 
         <div className="mt-10 grid lg:grid-cols-12 gap-8">
-          <div className="lg:col-span-8 space-y-12">
+          <div className="lg:col-span-12 space-y-12">
             <div>
               <div className="aspect-[16/10] rounded-3xl border border-white/10 overflow-hidden">
                 <img src={o.gallery[img]} alt={o.title} className="w-full h-full object-cover" />
@@ -33,6 +33,13 @@ export default function ObjectPage() {
                     <img src={g} alt="" className="w-full h-full object-cover" />
                   </button>
                 ))}
+              </div>
+              <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                  <div className="text-4xl md:text-5xl font-black text-[#E9F056]">{o.price}</div>
+                  <div className="mt-1 font-mono text-sm text-[#D1D5DB]">{o.pricePerM}</div>
+                </div>
+                <CallButton className="h-14 px-8 gap-3 font-black" iconClass="w-5 h-5" />
               </div>
             </div>
 
@@ -59,18 +66,6 @@ export default function ObjectPage() {
             </section>
           </div>
 
-          <aside className="lg:col-span-4">
-            <div className="lg:sticky lg:top-24 rounded-3xl border border-white/10 p-6 bg-[#3F4753]">
-              <div className="text-4xl font-black text-[#E9F056]">{o.price}</div>
-              <div className="mt-1 font-mono text-sm text-[#D1D5DB]">{o.pricePerM}</div>
-              <div className="mt-6 grid grid-cols-2 gap-px bg-white/10">
-                {[["Площадь", o.area], ["Участок", o.land], ["Мощность", o.power], ["Потолки", o.height]].map(([k, v]) => (
-                  <div key={k} className="bg-[#3F4753] p-3"><div className="font-mono text-[10px] uppercase text-[#D1D5DB]">{k}</div><div className="font-mono font-bold">{v}</div></div>
-                ))}
-              </div>
-              <CallButton className="mt-6 w-full h-14 gap-3 font-black" iconClass="w-5 h-5" />
-            </div>
-          </aside>
         </div>
 
         {others.length > 0 && (
