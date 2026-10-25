@@ -5,7 +5,6 @@ import Header from "@/components/site/Header";
 import Benefits from "@/components/site/Benefits";
 import ContactBlock from "@/components/site/ContactBlock";
 import { OBJECTS } from "@/lib/objects";
-import CallButton from "@/components/site/CallButton";
 
 export default function ObjectPage() {
   const { slug } = useParams();
@@ -39,7 +38,6 @@ export default function ObjectPage() {
                   <div className="text-4xl md:text-5xl font-black text-[#E9F056]">{o.price}</div>
                   <div className="mt-1 font-mono text-sm text-[#D1D5DB]">{o.pricePerM}</div>
                 </div>
-                <CallButton className="h-14 px-8 gap-3 font-black" iconClass="w-5 h-5" />
               </div>
             </div>
 
@@ -62,7 +60,7 @@ export default function ObjectPage() {
             <section>
               <h2 className="text-2xl font-black uppercase">Расположение</h2>
               <ul className="mt-4 font-mono text-sm text-[#D1D5DB] space-y-1">{o.metro.map((m) => <li key={m}>● м. {m}</li>)}</ul>
-              <iframe title="map" className="mt-6 w-full h-80 rounded-3xl border border-white/10" src={`https://yandex.ru/map-widget/v1/?ll=60.578242,56.859891&pt=60.578242,56.859891,pm2ywl&z=16`} />
+              <iframe title="map" className="mt-6 w-full h-[416px] rounded-3xl border border-white/10" src={`https://yandex.ru/map-widget/v1/?ll=60.578242,56.859891&pt=60.578242,56.859891,pm2ywl&z=16`} />
             </section>
           </div>
 
