@@ -45,8 +45,8 @@ export default function ObjectPage() {
               <h2 className="text-2xl font-black uppercase">Характеристики</h2>
               <div className="mt-6 flex flex-col">
                 {o.specs.map(([k, v]) => (
-                  <div key={k} className="flex items-baseline gap-4 py-3">
-                    <span className="text-[#D1D5DB]">{k}</span><span className="flex-1 border-b border-white/10" /><span className="font-mono font-bold text-right">{v}</span>
+                  <div key={k} className="flex flex-col gap-1 py-3 border-b border-white/10 sm:border-0 sm:flex-row sm:items-baseline sm:gap-4">
+                    <span className="text-[#D1D5DB]">{k}</span><span className="hidden sm:block flex-1 border-b border-white/10" /><span className="font-mono font-bold sm:text-right">{v}</span>
                   </div>
                 ))}
               </div>
