@@ -1,8 +1,8 @@
 const CARD = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/01dd1606e_.png";
 const HERO = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/a2b88b238_2.png";
 
-export const PHONE = "+7 (922) 611-76-36";
-export const PHONE_HREF = "tel:+79226117636";
+export const PHONE = "+7 (922) 024-44-35";
+export const PHONE_HREF = "tel:+79220244435";
 
 export const OBJECTS = [
   {

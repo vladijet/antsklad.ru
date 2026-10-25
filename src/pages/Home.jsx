@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Header from "@/components/site/Header";
 import Benefits from "@/components/site/Benefits";
 import ObjectCard from "@/components/site/ObjectCard";
@@ -20,9 +19,8 @@ export default function Home() {
           <p className="mt-6 text-lg text-[#E5E7EB] max-w-2xl">
             Здание и участок в собственности, все разрешения и коммуникации. Покупаете — и сразу начинаете работать.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex justify-center md:justify-start">
             <a href="#catalog" className="rounded-full bg-[#E9F056] text-black font-bold uppercase px-7 h-14 inline-flex items-center transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5">Смотреть объекты</a>
-            <Link to={`/objects/${hero.slug}`} className="rounded-full border border-white/30 font-bold uppercase px-7 h-14 inline-flex items-center transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5">{hero.address}</Link>
           </div>
         </div>
       </section>
