@@ -27,7 +27,7 @@ export default function ObjectPage() {
               <div className="aspect-[16/10] rounded-3xl border border-white/10 overflow-hidden">
                 <img src={o.gallery[img]} alt={o.title} className="w-full h-full object-cover" />
               </div>
-              <div className="mt-3 flex gap-3">
+              <div className={`mt-3 flex gap-3 ${o.gallery.length < 2 ? "hidden" : ""}`}>
                 {o.gallery.map((g, i) => (
                   <button key={g} onClick={() => setImg(i)} className={`w-28 aspect-[16/10] overflow-hidden border-2 ${i === img ? "border-[#E9F056]" : "border-transparent opacity-60"}`}>
                     <img src={g} alt="" className="w-full h-full object-cover" />
