@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import CallButton from "@/components/site/CallButton";
 
-const LOGO = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/f2e7b4f90_logo_antskald_2.svg";
+const LOGO = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/a1285096b_logo_AntSklad_3.svg";
 
 export default function Header() {
   const isHome = useLocation().pathname === "/";
