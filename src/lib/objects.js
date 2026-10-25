@@ -1,6 +1,7 @@
 const RENDER = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/d71c5c565_generated_image.png";
 const EXT = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/b18485370_generated_image.png";
 const INT = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/23b45de50_generated_image.png";
+const CARD = "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/3dcdca2d5_generated_a02640f5.png";
 
 export const PHONE = "+7 (922) 611-76-36";
 export const PHONE_HREF = "tel:+79226117636";
@@ -19,6 +20,7 @@ export const OBJECTS = [
     power: "200 кВт",
     height: "7 м",
     cover: RENDER,
+    cardCover: CARD,
     gallery: [
       RENDER,
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/05f12fa74_image.png",
