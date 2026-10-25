@@ -11,7 +11,7 @@ export default function ObjectCard({ o }) {
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold uppercase">{o.title}</h3>
-        <p className="text-[#6B7280] text-sm mt-1">{o.address}</p>
+        <p className="text-[#6B7280] text-sm mt-1">Свободная планировка</p>
         <div className="mt-5 grid grid-cols-2 gap-px bg-[#4B5563]/15 rounded-xl overflow-hidden">
           {metrics.map(([k, v]) => (
             <div key={k} className="bg-[#FAF5F0] p-3">
