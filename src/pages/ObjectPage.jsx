@@ -29,7 +29,7 @@ export default function ObjectPage() {
               </div>
               <div className={`mt-3 flex gap-3 overflow-x-auto pb-2 ${o.gallery.length < 2 ? "hidden" : ""}`}>
                 {o.gallery.map((g, i) => (
-                  <button key={g} onClick={() => setImg(i)} className={`shrink-0 w-28 aspect-[16/10] overflow-hidden border-2 ${i === img ? "border-[#E9F056]" : "border-transparent opacity-60"}`}>
+                  <button key={g} onClick={() => setImg(i)} className={`shrink-0 w-28 aspect-[16/10] rounded-xl overflow-hidden border-2 transition-transform hover:scale-105 ${i === img ? "border-[#E9F056]" : "border-transparent opacity-60"}`}>
                     <Image src={g} alt="" loading="lazy" className="w-full h-full object-cover" />
                   </button>
                 ))}

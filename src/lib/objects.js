@@ -24,7 +24,6 @@ export const OBJECTS = [
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/cfb31bd34_10.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/fe8a73de6_9.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/4a6534a98_8.jpg",
-      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/9d33bbbe9_4.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/451812c8e_3.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/e2cf29dbe_.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/90ae6a155_.jpg",
