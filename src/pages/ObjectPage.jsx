@@ -21,6 +21,8 @@ export default function ObjectPage() {
       <div className="max-w-7xl mx-auto px-5 md:px-10 py-10">
         <Link to="/" className="inline-flex items-center gap-2 font-mono text-xs uppercase text-[#D1D5DB] hover:text-white"><ArrowLeft className="w-4 h-4" /> Объекты</Link>
         <h1 className="mt-6 text-3xl md:text-6xl font-bold tracking-tight leading-tight">{o.title}</h1>
+        <p className="mt-3 text-[#D1D5DB]">Свободная планировка</p>
+        {o.status && <span className="mt-4 inline-block text-sm font-bold bg-[#E9F056] text-[#2F3640] rounded-full px-4 py-1.5">{o.status}</span>}
 
         <div className="mt-10 grid lg:grid-cols-12 gap-8">
           <div className="lg:col-span-12 space-y-12">
@@ -59,11 +61,11 @@ export default function ObjectPage() {
               <div className="mt-6 space-y-4 text-[#C9D1DC] leading-relaxed">{o.about.map((p) => <p key={p}>{p}</p>)}</div>
             </section>
 
-            <section>
+            {o.map && <section>
               <h2 className="text-2xl font-black uppercase">Расположение</h2>
               <ul className="mt-4 font-mono text-sm text-[#D1D5DB] space-y-1">{o.metro.map((m) => <li key={m}>● м. {m}</li>)}</ul>
-              <iframe title="map" loading="eager" className="mt-6 w-full h-[416px] rounded-3xl border border-white/10" src={`https://yandex.ru/map-widget/v1/?ll=60.578242,56.859891&pt=60.578242,56.859891,pm2ywl&z=16`} />
-            </section>
+              <iframe title="map" loading="eager" className="mt-6 w-full h-[416px] rounded-3xl border border-white/10" src={o.map} />
+            </section>}
 
             {o.slug === "pilotnaya-11" && <UseCases />}
           </div>
