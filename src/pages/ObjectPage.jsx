@@ -18,7 +18,7 @@ export default function ObjectPage() {
   return (
     <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0] overflow-x-hidden">
       <Header />
-      <div className="max-w-7xl mx-auto px-5 md:px-10 py-10">
+      <div className="max-w-7xl mx-auto px-5 md:px-10 pt-[104px] pb-10">
         <Link to="/" className="inline-flex items-center gap-2 font-mono text-xs uppercase text-[#D1D5DB] hover:text-white"><ArrowLeft className="w-4 h-4" /> Объекты</Link>
         <h1 className="mt-6 text-3xl md:text-6xl font-bold tracking-tight leading-tight">{o.title}</h1>
         <p className="mt-3 text-[#D1D5DB]">Свободная планировка</p>

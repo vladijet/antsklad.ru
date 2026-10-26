@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header
-      className={`${isHome ? "fixed inset-x-0" : "sticky"} top-0 z-40 transition-colors duration-300 ${transparent ? "bg-transparent border-b border-transparent" : "bg-[#4B5563] border-b border-white/10"}`}
+      className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${transparent ? "bg-transparent border-b border-transparent" : "bg-[#4B5563] border-b border-white/10"}`}
     >
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center">
