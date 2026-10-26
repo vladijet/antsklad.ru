@@ -90,7 +90,7 @@ export const OBJECTS = [
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/096becacc_7.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/e461f7a33_8.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/f046a5432_10.jpg",
-      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/8b5211b8a_11.jpg",
+      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/6493fae8b_11.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/539d1ddee_12.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/35ada38e7_13.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/c74c88449_14.jpg",
