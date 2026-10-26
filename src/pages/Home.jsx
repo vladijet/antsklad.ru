@@ -11,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0]">
       <Header />
       <section className="relative h-[88vh] min-h-[560px] overflow-hidden">
-        <Image src={hero.cover} alt="" loading="eager" fetchPriority="high" className="absolute inset-0 w-full h-full object-cover" />
+        <Image src="https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/2f330df2c_complex_1920x1080.png" alt="" loading="eager" fetchPriority="high" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#4B5563] via-[#4B5563]/60 to-[#4B5563]/20" />
         <div className="relative h-full max-w-7xl mx-auto px-5 md:px-10 flex flex-col justify-end pb-16">
           <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tight leading-[0.95] max-w-4xl">
