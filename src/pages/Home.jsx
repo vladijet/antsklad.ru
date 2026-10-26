@@ -11,14 +11,14 @@ export default function Home() {
     <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0]">
       <Header />
       <section className="relative h-[88vh] min-h-[560px] overflow-hidden">
-        <Image src="https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/2f330df2c_complex_1920x1080.png" alt="" loading="eager" fetchPriority="high" className="absolute inset-0 w-full h-full object-cover" />
+        <Image src="https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/d8f0d6105_complex_eyelevel_4k.png" alt="" loading="eager" fetchPriority="high" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#4B5563] via-[#4B5563]/60 to-[#4B5563]/20" />
         <div className="relative h-full max-w-7xl mx-auto px-5 md:px-10 flex flex-col justify-end pb-16">
           <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tight leading-[0.95] max-w-4xl">
             Помещения для бизнеса в Екатеринбурге
           </h1>
           <p className="mt-6 text-lg text-[#E5E7EB] max-w-2xl">
-            Здание и участок в собственности, все разрешения и коммуникации. Покупаете — и сразу начинаете работать.
+            Здания и участки в собственности. Все разрешения получены, а коммуникации подключены. Покупаете — и сразу начинаете работать.
           </p>
           <div className="mt-8 flex justify-center md:justify-start">
             <a href="#catalog" className="rounded-full bg-[#E9F056] text-black font-bold uppercase px-7 h-14 inline-flex items-center transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5">Смотреть объекты</a>
