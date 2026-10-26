@@ -27,9 +27,9 @@ export default function ObjectPage() {
               <div className="aspect-[16/10] rounded-3xl border border-white/10 overflow-hidden">
                 <Image src={o.gallery[img]} alt={o.title} loading="eager" fetchPriority="high" className="w-full h-full object-cover" />
               </div>
-              <div className={`mt-3 flex gap-3 ${o.gallery.length < 2 ? "hidden" : ""}`}>
+              <div className={`mt-3 flex gap-3 overflow-x-auto pb-2 ${o.gallery.length < 2 ? "hidden" : ""}`}>
                 {o.gallery.map((g, i) => (
-                  <button key={g} onClick={() => setImg(i)} className={`w-28 aspect-[16/10] overflow-hidden border-2 ${i === img ? "border-[#E9F056]" : "border-transparent opacity-60"}`}>
+                  <button key={g} onClick={() => setImg(i)} className={`shrink-0 w-28 aspect-[16/10] overflow-hidden border-2 ${i === img ? "border-[#E9F056]" : "border-transparent opacity-60"}`}>
                     <Image src={g} alt="" loading="lazy" className="w-full h-full object-cover" />
                   </button>
                 ))}
