@@ -78,9 +78,10 @@ export const OBJECTS = [
     area: "509 м²",
     land: "14 соток",
     power: "145 кВт",
-    cover: TOLEDOVA,
-    cardCover: "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/9b79bd72f_1.jpg",
+    cover: "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/db2d4fc9a_.jpg",
+    cardCover: "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/db2d4fc9a_.jpg",
     gallery: [
+      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/db2d4fc9a_.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/9b79bd72f_1.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/4e5d0e98b_2.jpg",
       "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/65be93c5c_3.jpg",
