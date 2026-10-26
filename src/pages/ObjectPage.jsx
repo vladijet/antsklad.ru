@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { setPageSeo, HOME_SEO } from "@/lib/seo";
 import { Image } from "@/components/ui/image";
 import { useParams, Link } from "react-router-dom";
 import { Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -12,6 +13,25 @@ export default function ObjectPage() {
   const { slug } = useParams();
   const o = OBJECTS.find((x) => x.slug === slug);
   const [img, setImg] = useState(0);
+  useEffect(() => {
+    if (!o) return;
+    const description = `${o.title}. Цена ${o.price} без НДС. Участок ${o.land}, мощность ${o.power}.`;
+    setPageSeo({
+      title: `${o.title} — Уральские склады`,
+      description,
+      path: `/objects/${o.slug}`,
+      image: o.cardCover || o.cover,
+      jsonLd: {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: o.title,
+        description,
+        image: o.cardCover || o.cover,
+        offers: { "@type": "Offer", price: o.price.replace(/\D/g, ""), priceCurrency: "RUB", url: `https://antsklad1.base44.app/objects/${o.slug}` },
+      },
+    });
+    return () => setPageSeo(HOME_SEO);
+  }, [o]);
   if (!o) return <div className="min-h-screen bg-[#4B5563] text-white p-10">Объект не найден. <Link to="/" className="text-[#E9F056]">В каталог</Link></div>;
   const others = OBJECTS.filter((x) => x.slug !== slug);
 
