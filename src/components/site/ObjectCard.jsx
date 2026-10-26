@@ -3,7 +3,7 @@ import { Image } from "@/components/ui/image";
 import { ArrowRight } from "lucide-react";
 
 export default function ObjectCard({ o }) {
-  const metrics = [["Площадь", o.area], ["Участок", o.land], ["Мощность", o.power], ["Цена", o.price]];
+  const metrics = [["Площадь", o.area], ["Участок", o.land], ["Мощность", o.power], ["Цена без НДС", o.price]];
   return (
     <Link to={`/objects/${o.slug}`} className="group block rounded-3xl overflow-hidden bg-[#FAF5F0] text-[#2F3640] transition-transform duration-300 hover:-translate-y-1">
       <div className="relative aspect-[16/10] overflow-hidden">

@@ -41,6 +41,7 @@ export default function ObjectPage() {
                 <div>
                   <div className="text-4xl md:text-5xl font-black text-[#E9F056]">{o.price}</div>
                   <div className="mt-1 font-mono text-sm text-[#D1D5DB]">{o.pricePerM}</div>
+                  <div className="mt-1 font-mono text-xs uppercase text-[#9CA3AF]">Цена без НДС</div>
                 </div>
               </div>
             </div>
@@ -58,7 +59,7 @@ export default function ObjectPage() {
 
             <section>
               <h2 className="text-2xl font-black uppercase">Об объекте</h2>
-              <div className="mt-6 space-y-4 text-[#C9D1DC] leading-relaxed">{o.about.map((p) => <p key={p}>{p}</p>)}</div>
+              <div className="mt-6 space-y-4 text-[#C9D1DC] leading-relaxed">{o.about.map((p) => <p key={p}>{p}</p>)}<p>Копии всех документов предоставляем по запросу.</p></div>
             </section>
 
             {o.map && <section>
