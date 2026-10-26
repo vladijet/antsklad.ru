@@ -8,7 +8,7 @@ import { OBJECTS } from "@/lib/objects";
 export default function Home() {
   const hero = OBJECTS[0];
   return (
-    <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0]">
+    <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0] overflow-x-hidden">
       <Header />
       <section className="relative h-[88vh] min-h-[560px] overflow-hidden">
         <Image src="https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/0994b00fa_home.png" alt="" loading="eager" fetchPriority="high" className="absolute inset-0 w-full h-full object-cover" />

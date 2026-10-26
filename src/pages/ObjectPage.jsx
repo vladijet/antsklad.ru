@@ -16,7 +16,7 @@ export default function ObjectPage() {
   const others = OBJECTS.filter((x) => x.slug !== slug);
 
   return (
-    <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0]">
+    <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0] overflow-x-hidden">
       <Header />
       <div className="max-w-7xl mx-auto px-5 md:px-10 py-10">
         <Link to="/" className="inline-flex items-center gap-2 font-mono text-xs uppercase text-[#D1D5DB] hover:text-white"><ArrowLeft className="w-4 h-4" /> Объекты</Link>
@@ -24,8 +24,8 @@ export default function ObjectPage() {
         <p className="mt-3 text-[#D1D5DB]">Свободная планировка</p>
         {o.status && <span className="mt-4 inline-block text-sm font-bold bg-[#E9F056] text-[#2F3640] rounded-full px-4 py-1.5">{o.status}</span>}
 
-        <div className="mt-10 grid lg:grid-cols-12 gap-8">
-          <div className="lg:col-span-12 space-y-12">
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="lg:col-span-12 space-y-12 min-w-0">
             <div>
               <div className="aspect-[16/10] rounded-3xl border border-white/10 overflow-hidden">
                 <Image src={o.gallery[img]} alt={o.title} loading="eager" fetchPriority="high" className="w-full h-full object-cover" />
