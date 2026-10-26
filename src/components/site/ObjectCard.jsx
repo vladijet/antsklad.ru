@@ -12,7 +12,7 @@ export default function ObjectCard({ o }) {
         {o.status && <span className="absolute top-3 right-3 text-xs font-bold bg-[#E9F056] text-[#2F3640] rounded-full px-3 py-1">{o.status}</span>}
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold uppercase">{o.title}</h3>
+        <h3 className="text-xl font-bold">{o.title}</h3>
         <p className="text-[#6B7280] text-sm mt-1">Свободная планировка</p>
         <div className="mt-5 grid grid-cols-2 gap-px bg-[#4B5563]/15 rounded-xl overflow-hidden">
           {metrics.map(([k, v]) => (
