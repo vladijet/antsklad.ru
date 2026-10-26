@@ -10,12 +10,12 @@ const ITEMS = [
 export default function UseCases() {
   return (
     <section>
-      <h2 className="text-2xl font-black">Запускай сам или сдавай в аренду для:</h2>
+      <h2 className="text-2xl font-black uppercase">Локация идеально подходит для</h2>
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
         {ITEMS.map(([title, src]) => (
           <div key={title} className="rounded-3xl bg-white p-4 transition-transform duration-300 hover:-translate-y-1">
+            <p className="mb-3 text-center font-bold text-[#2f3640]">{title}</p>
             <Image src={src} alt={title} className="w-full aspect-square rounded-2xl" fittingType="fit" />
-            <p className="mt-3 text-center font-bold text-[#2f3640]">{title}</p>
           </div>
         ))}
       </div>
