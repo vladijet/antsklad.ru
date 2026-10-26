@@ -19,7 +19,12 @@ export const OBJECTS = [
     height: "7 м",
     cover: HERO,
     cardCover: CARD,
-    gallery: [CARD],
+    gallery: [
+      CARD,
+      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/873bfcc06_fasad.png",
+      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/b2c6c69d0_.png",
+      "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/069439d66_1.png",
+    ],
     specs: [
       ["Общая площадь", "806 м²"],
       ["Участок", "27 соток"],
