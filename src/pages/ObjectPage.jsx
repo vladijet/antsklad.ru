@@ -17,7 +17,7 @@ export default function ObjectPage() {
     if (!o) return;
     const description = `${o.title}. Цена ${o.price} без НДС. Участок ${o.land}, мощность ${o.power}.`;
     setPageSeo({
-      title: `${o.title} — Уральские склады`,
+      title: `${o.title} — AntSklad`,
       description,
       path: `/objects/${o.slug}`,
       image: o.cardCover || o.cover,

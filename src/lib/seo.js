@@ -1,7 +1,7 @@
 const SITE = "https://antsklad1.base44.app";
 
 export const HOME_SEO = {
-  title: "Уральские склады — готовые склады и коммерческие здания в Екатеринбурге от собственника",
+  title: "AntSklad — готовые склады и коммерческие здания в Екатеринбурге от собственника",
   description: "В хороших локациях, с адаптацией под любой бизнес",
   path: "/",
   image: "https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/5ede929c7_home.png",
