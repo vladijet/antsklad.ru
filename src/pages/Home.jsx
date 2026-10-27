@@ -4,6 +4,7 @@ import Benefits from "@/components/site/Benefits";
 import ObjectCard from "@/components/site/ObjectCard";
 import ContactBlock from "@/components/site/ContactBlock";
 import { OBJECTS } from "@/lib/objects";
+import Reveal from "@/components/site/Reveal";
 
 export default function Home() {
   const hero = OBJECTS[0];
@@ -21,11 +22,12 @@ export default function Home() {
             Здания и участки в собственности. Все разрешения получены, а коммуникации подключены. Покупаете — и сразу начинаете работать.
           </p>
           <div className="mt-8 flex justify-center md:justify-start">
-            <a href="#catalog" className="rounded-full bg-[#E9F056] text-black font-bold uppercase px-7 h-14 inline-flex items-center transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5">Смотреть объекты</a>
+            <a href="#catalog" onClick={(e) => { e.preventDefault(); document.getElementById("catalog").scrollIntoView({ behavior: "smooth" }); }} className="rounded-full bg-[#E9F056] text-black font-bold uppercase px-7 h-14 inline-flex items-center transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5">Смотреть объекты</a>
           </div>
         </div>
       </section>
-      <section id="catalog" className="max-w-7xl mx-auto px-5 md:px-10 py-20 border-b border-white/10">
+      <section id="catalog" className="scroll-mt-20 max-w-7xl mx-auto px-5 md:px-10 py-20 border-b border-white/10">
+        <Reveal>
         <div className="flex items-end justify-between">
           <div>
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">Объекты</h2>
@@ -33,11 +35,12 @@ export default function Home() {
 
         </div>
         <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {OBJECTS.map((o) => <ObjectCard key={o.slug} o={o} />)}
+          {OBJECTS.map((o, i) => <Reveal key={o.slug} delay={i * 0.1}><ObjectCard o={o} /></Reveal>)}
         </div>
+        </Reveal>
       </section>
-      <Benefits />
-      <ContactBlock />
+      <Reveal><Benefits /></Reveal>
+      <Reveal><ContactBlock /></Reveal>
     </div>
   );
 }
