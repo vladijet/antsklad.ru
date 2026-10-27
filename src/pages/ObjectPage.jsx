@@ -48,12 +48,12 @@ export default function ObjectPage() {
           <div className="lg:col-span-12 space-y-12 min-w-0">
             <div>
               <div className="aspect-[16/10] rounded-3xl border border-white/10 overflow-hidden">
-                <Image src={o.gallery[img]} alt={o.title} loading="eager" fetchPriority="high" className="w-full h-full object-cover" />
+                <Image src={o.gallery[img]} alt={o.title} loading="eager" fetchPriority="high" quality={80} className="w-full h-full object-cover" />
               </div>
               <div className={`mt-1 flex gap-3 overflow-x-auto pt-2 pb-2 px-1 ${o.gallery.length < 2 ? "hidden" : ""}`}>
                 {o.gallery.map((g, i) => (
                   <button key={g} onClick={() => setImg(i)} className={`shrink-0 w-28 aspect-[16/10] rounded-xl overflow-hidden border-2 transition-transform hover:scale-105 ${i === img ? "border-[#E9F056]" : "border-transparent opacity-60"}`}>
-                    <Image src={g} alt="" loading="lazy" className="w-full h-full object-cover" />
+                    <Image src={g} alt="" loading="lazy" quality={70} className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>

@@ -7,7 +7,7 @@ export default function ObjectCard({ o }) {
   return (
     <Link to={`/objects/${o.slug}`} className="group block rounded-3xl overflow-hidden bg-[#FAF5F0] text-[#2F3640] transition-transform duration-300 hover:-translate-y-1">
       <div className="relative aspect-[16/10] overflow-hidden">
-        <Image src={o.cardCover} loading="lazy" alt={o.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        <Image src={o.cardCover} loading="lazy" quality={75} alt={o.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
         <span className="absolute top-3 left-3 font-mono text-xs bg-[#4B5563]/90 text-[#FAF5F0] rounded-full px-3 py-1">{o.lot}</span>
         {o.status && <span className="absolute top-3 right-3 text-xs font-bold bg-[#E9F056] text-[#2F3640] rounded-full px-3 py-1">{o.status}</span>}
       </div>
