@@ -9,7 +9,7 @@ export default function ContactBlock() {
         <CallButton label="Обсудить условия" className="mt-10 font-black px-5 h-11 text-sm gap-2 sm:gap-4 sm:text-xl md:text-2xl sm:px-7 md:px-10 sm:h-auto sm:py-4" iconClass="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
       </div>
       <footer className="border-t border-white/10 py-6 text-center font-mono text-xs text-[#D1D5DB]">
-        © {new Date().getFullYear()} ООО Лотика · Екатеринбург и Свердловская область
+        © 2026 ИП Зайцев А.С. · Екатеринбург
       </footer>
     </section>
   );
