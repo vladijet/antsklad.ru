@@ -14,8 +14,8 @@ export default function Home() {
       <section className="relative h-[88vh] min-h-[560px] overflow-hidden">
         <HeroImage />
         <div className="absolute inset-0 bg-gradient-to-t from-[#4B5563] via-[#4B5563]/60 to-[#4B5563]/20" />
-        <div className="relative h-full max-w-7xl mx-auto px-5 md:px-10 flex flex-col justify-end pb-16">
-          <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tight leading-[0.95] max-w-4xl">
+        <div className="relative h-full max-w-7xl mx-auto px-5 md:px-10 flex flex-col justify-end pb-16 md:pb-4">
+          <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tight leading-[1.05] max-w-4xl">
             Помещения для бизнеса в Екатеринбурге
           </h1>
           <p className="mt-6 text-lg text-[#E5E7EB] max-w-2xl">
