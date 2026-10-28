@@ -12,6 +12,8 @@ export const IMAGE_LOAD_MODE = {
 
 const DEVICE_PIXEL_RATIOS = [1, 2, 3]
 const MAX_DIMENSION = 6000
+// Upper bound for retina variants — beyond this the extra bytes buy nothing.
+const MAX_SRCSET_WIDTH = 2400
 
 export function splitImageProps(props) {
   const wrapperProps = {}
@@ -91,8 +93,13 @@ export function buildSrcSet(parsed, options) {
     (dpr) =>
       `${buildTransformUrl(parsed, {
         ...options,
-        width: options.width * dpr,
-        height: options.height ? options.height * dpr : undefined,
+        width: Math.min(options.width * dpr, MAX_SRCSET_WIDTH),
+        height: options.height
+          ? Math.min(
+              options.height * dpr,
+              Math.round((MAX_SRCSET_WIDTH * options.height) / options.width)
+            )
+          : undefined,
       })} ${dpr}x`
   ).join(", ")
 }

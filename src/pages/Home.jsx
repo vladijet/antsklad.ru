@@ -1,5 +1,5 @@
 import Header from "@/components/site/Header";
-import { Image } from "@/components/ui/image";
+import HeroImage from "@/components/site/HeroImage";
 import Benefits from "@/components/site/Benefits";
 import ObjectCard from "@/components/site/ObjectCard";
 import ContactBlock from "@/components/site/ContactBlock";
@@ -12,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#4B5563] text-[#FAF5F0] overflow-x-hidden">
       <Header />
       <section className="relative h-[88vh] min-h-[560px] overflow-hidden">
-        <Image src="https://media.base44.com/images/public/6adc6b588f36fadc6ae176ca/0994b00fa_home.png" alt="" loading="eager" fetchPriority="high" quality={75} className="absolute inset-0 w-full h-full object-cover" />
+        <HeroImage />
         <div className="absolute inset-0 bg-gradient-to-t from-[#4B5563] via-[#4B5563]/60 to-[#4B5563]/20" />
         <div className="relative h-full max-w-7xl mx-auto px-5 md:px-10 flex flex-col justify-end pb-16">
           <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tight leading-[0.95] max-w-4xl">
